@@ -1,0 +1,78 @@
+.english-learning-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--Neutral-60);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.english-lesson-card {
+  background: var(--Neutral-10);
+  border: 1px solid var(--Neutral-20);
+  border-radius: 12px;
+  padding: 24px;
+  color: var(--Neutral-90);
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: auto;
+  max-height: 100%;
+  font-family: "Space Mono", monospace;
+  
+  @media (max-width: 768px) {
+    padding: 16px;
+    border-radius: 0;
+    border: none;
+    max-height: calc(100vh - 120px); /* Adjust for control tray */
+  }
+
+  h3 {
+    color: var(--Blue-400);
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--Neutral-20);
+    padding-bottom: 8px;
+  }
+
+  .lesson-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    
+    strong {
+      color: var(--Blue-400);
+    }
+  }
+
+  .lesson-section {
+    margin-top: 20px;
+    background: var(--Neutral-15);
+    padding: 16px;
+    border-radius: 8px;
+
+    h4 {
+      color: var(--Green-500);
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 24px;
+
+      li {
+        margin-bottom: 8px;
+        line-height: 1.5;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
