@@ -4,7 +4,7 @@ import {
   Modality,
   Type,
 } from "@google/genai";
-import { useEffect, useRef, useState, memo } from "react";
+import { useEffect, useState, memo } from "react";
 import { useLiveAPIContext } from "../../contexts/LiveAPIContext";
 import "./english-learning.scss";
 
